@@ -1,108 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get £80 When You Switch to Octopus Energy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Switch to Octopus Energy & Get £80 | Tonia's Offer</title>
   <style>
+    :root {
+      --primary: #7B61FF; /* Octopus purple */
+      --cta: #2b8a3e; /* Green for buttons */
+      --text: #333;
+      --background: #fff;
+      --accent: #f3f0ff;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f8ff;
+      background: var(--accent);
+      color: var(--text);
       margin: 0;
       padding: 0;
-      color: #333;
     }
-    .container {
-      max-width: 700px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #2b8a3e;
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
       text-align: center;
     }
-    .bonus {
-      background: #e0ffe0;
-      padding: 15px;
-      border-left: 5px solid #2b8a3e;
-      margin: 20px 0;
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.8rem 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    h1, h2 {
+      color: var(--primary);
+      text-align: center;
+    }
+
+    .bonus {
+      background: #e6ffe6;
+      border-left: 5px solid var(--cta);
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
     .cta-button {
       display: block;
-      width: 100%;
-      background: #2b8a3e;
+      background: var(--cta);
       color: white;
-      padding: 15px;
+      padding: 1rem;
       text-align: center;
       text-decoration: none;
-      font-weight: bold;
       border-radius: 5px;
-      margin-top: 10px;
+      margin: 1rem auto;
+      width: 100%;
+      max-width: 300px;
     }
+
     form {
-      margin-top: 30px;
+      margin-top: 2rem;
     }
+
     label {
       display: block;
-      margin: 10px 0 5px;
+      margin-top: 1rem;
     }
-    input[type="text"], input[type="email"] {
+
+    input, textarea {
       width: 100%;
-      padding: 10px;
-      border-radius: 5px;
+      padding: 0.8rem;
       border: 1px solid #ccc;
-    }
-    input[type="submit"] {
-      background: #2b8a3e;
-      color: white;
-      padding: 12px;
-      border: none;
       border-radius: 5px;
-      margin-top: 15px;
-      cursor: pointer;
-      font-size: 16px;
+      margin-top: 0.5rem;
     }
+
+    input[type="submit"] {
+      background: var(--cta);
+      color: white;
+      border: none;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
+
     .footer {
       text-align: center;
-      margin-top: 30px;
-      font-size: 0.9em;
-      color: #666;
+      font-size: 0.8em;
+      margin-top: 3rem;
+      color: #777;
+    }
+
+    .reviews, .terms, .info {
+      margin-top: 3rem;
+    }
+
+    .review-card {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-left: 4px solid var(--primary);
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 1rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Get £80 When You Switch to Octopus Energy</h1>
-    <p>Hi, I’m <strong>Tonia</strong>. Switch to Octopus Energy using my link and get:</p>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Octopus_Energy_logo.svg/2560px-Octopus_Energy_logo.svg.png" alt="Octopus Energy Logo" class="logo"/>
+  <h1>Get £80 When You Switch to Octopus Energy</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#how">How it Works</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#info">Info</a>
+  <a href="#terms">Terms</a>
+</nav>
+
+<div class="container">
+
+  <section>
+    <p>Hi, I’m <strong>Tonia</strong>. Join Octopus Energy and get:</p>
     <div class="bonus">
       <ul>
-        <li>£50 credit automatically from Octopus Energy</li>
+        <li>£50 credit from Octopus Energy</li>
         <li>£30 extra from me via PayPal or bank transfer</li>
       </ul>
     </div>
     <a href="https://share.octopus.energy/peach-shade-484" class="cta-button" target="_blank">Switch Now & Claim £80</a>
+  </section>
 
-    <form name="claim-form">
-      <h2>Claim Your Extra £30</h2>
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" required>
+  <section id="how">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Click the button above and sign up with Octopus.</li>
+      <li>Fill out the form below to claim your bonus.</li>
+      <li>Once your switch is confirmed, I’ll send you £30!</li>
+    </ol>
+  </section>
 
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" required>
+  <form name="claim-form">
+    <h2>Claim Your Extra £30</h2>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
 
-      <label for="payment">Preferred Payment Method (PayPal or bank)</label>
-      <input type="text" id="payment" name="payment" required>
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
 
-      <input type="submit" value="Submit">
-    </form>
+    <label for="payment">PayPal Email or Bank Details</label>
+    <input type="text" id="payment" name="payment" required>
 
-    <div class="footer">
-      This site is independently run by Tonia, an Octopus Energy customer.<br>
-      Questions? Get in touch after signing up.
+    <label for="notes">Additional Notes (optional)</label>
+    <textarea id="notes" name="notes" rows="3"></textarea>
+
+    <input type="submit" value="Submit Claim">
+  </form>
+
+  <section id="reviews" class="reviews">
+    <h2>What People Say About Octopus</h2>
+    <div class="review-card">
+      "Octopus customer service is second to none – always helpful and quick!" – ★★★★★
     </div>
+    <div class="review-card">
+      "Easy switch, great app and green energy. Highly recommend!" – ★★★★★
+    </div>
+    <div class="review-card">
+      "By far the best energy provider I've used in years." – ★★★★★
+    </div>
+    <p style="text-align:center;"><a href="https://uk.trustpilot.com/review/octopus.energy" target="_blank">Read more on Trustpilot →</a></p>
+  </section>
+
+  <section id="info" class="info">
+    <h2>Why Choose Octopus?</h2>
+    <ul>
+      <li>100% renewable electricity</li>
+      <li>No exit fees</li>
+      <li>Great customer service</li>
+      <li>Flexible tariffs</li>
+    </ul>
+  </section>
+
+  <section id="terms" class="terms">
+    <h2>Terms & Conditions</h2>
+    <p>The £30 bonus is a goodwill payment offered by me, Tonia, and is not affiliated with Octopus Energy. It is only paid if:</p>
+    <ul>
+      <li>You use my referral link to switch</li>
+      <li>Octopus confirms the switch is successful</li>
+      <li>You complete the form above</li>
+    </ul>
+    <p>I reserve the right to refuse payments for incomplete or unverifiable claims. Payments are usually made within 14 days of Octopus confirming the switch.</p>
+  </section>
+
+  <div class="footer">
+    Website by Tonia | Not affiliated with Octopus Energy | UK customers only
   </div>
+</div>
+
 </body>
 </html>
